@@ -1,8 +1,8 @@
 {
   "name": "node-taobao-topclient",
-  "version": "0.1.0",
+  "version": "0.1.3",
   "description": "taobao topsdk for node.js(support es6/7,promise,async/await)",
-  "main": "lib/index.js",
+  "main": "lib/topClient.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "cross-env BABEL_ENV=commonjs babel src --out-dir lib",
