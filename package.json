@@ -1,8 +1,8 @@
 {
   "name": "node-taobao-topclient",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "taobao topsdk for node.js(support es6/7,promise,async/await)",
-  "main": "index.js",
+  "main": "lib/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "cross-env BABEL_ENV=commonjs babel src --out-dir lib",
@@ -35,5 +35,9 @@
     "eslint-config-airbnb-base": "^10.0.1",
     "eslint-plugin-import": "^2.2.0",
     "rimraf": "^2.5.4"
+  },
+  "dependencies": {
+    "babel-preset-es2015": "^6.18.0",
+    "request": "^2.78.0"
   }
 }
