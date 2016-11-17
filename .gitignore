@@ -1,0 +1,15 @@
+logs
+*.log
+npm-debug.log*
+node_modules
+.npm
+coverage
+build
+build/Release
+.module-cache
+.DS_Store
+.idea
+*.iml
+.vscode
+
+lib

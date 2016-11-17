@@ -1,0 +1,17 @@
+{
+   "extends": "airbnb-base",
+    "env": {
+        "node": true,
+        "mocha": true
+    },
+    "parser": "babel-eslint",
+    "plugins": ["import"],
+    "rules": {
+        "comma-dangle": ["warn", "only-multiline"],
+        "indent": [2, 2, {"SwitchCase": 1}],
+        "object-shorthand": [2, "always", { "avoidQuotes": false }],
+    },
+    "globals": {
+      "expect": true
+    }
+}
