@@ -1,6 +1,6 @@
 {
   "name": "node-taobao-topclient",
-  "version": "0.1.3",
+  "version": "0.1.6",
   "description": "taobao topsdk for node.js(support es6/7,promise,async/await)",
   "main": "lib/topClient.js",
   "scripts": {
