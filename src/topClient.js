@@ -55,7 +55,7 @@ class TopClient {
     return util.md5(basestring).toUpperCase();
   }
 
-  request(params, type = 'GET') {
+  request(params, type = 'POST') {
     return new Promise((resolve, reject) => {
       util.checkRequired(params, 'method')
       .then(() => {
@@ -83,6 +83,8 @@ class TopClient {
         };
         if (type.toUpperCase() === 'GET') {
           requestOpts.qs = args;
+        } else if (type.toUpperCase() === 'POST') {
+          requestOpts.form = args;
         } else {
           requestOpts.body = JSON.stringify(args);
         }
