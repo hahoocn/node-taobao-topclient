@@ -1,4 +1,7 @@
 # node-taobao-topclient
+
+[![npm version](https://img.shields.io/npm/v/node-taobao-topclient.svg?style=flat-square)](https://www.npmjs.com/package/node-taobao-topclient)
+
 为了更好的使用ES6/7开发，对淘宝官方Node.js版的topsdk进行修改，使用方法和官方一致，不同的是返回Promise结果。淘宝官方的sdk中使用[urllib](https://github.com/node-modules/urllib)作为Http工具，这里修改为使用[request](https://github.com/request/request)。
 
 ## 安装
@@ -65,13 +68,13 @@ async function sendSms() {
 }
 ```
 ### 注意
-默认是GET，如果使用POST等，execute的第三个参数请输入POST，如：
+默认是POST，如果使用GET等，execute的第三个参数请输入，如：
 ```javascript
 ...
 client.execute('alibaba.aliqin.fc.sms.num.send', {
   extend: '123456',
   ...
-}, 'POST')
+}, 'GET')
 ...
 ```
 
