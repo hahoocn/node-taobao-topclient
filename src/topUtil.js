@@ -68,7 +68,8 @@ function checkRequired(params, keys) {
   });
 }
 
-function getApiResponseName(apiName) {
+function getApiResponseName(simplify, apiName) {
+  if (simplify) return 'result';
   const reg = /\./g;
   let thisApiName = apiName;
   if (thisApiName.match('^taobao')) {
