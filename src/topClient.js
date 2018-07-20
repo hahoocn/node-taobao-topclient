@@ -118,7 +118,7 @@ class TopClient {
   }
 
   execute(apiname, params, type) {
-    return this.invoke(apiname, params, [util.getApiResponseName(apiname)], null, type);
+    return this.invoke(apiname, params, [util.getApiResponseName(params.simplify, apiname)], null, type);
   }
 }
 
